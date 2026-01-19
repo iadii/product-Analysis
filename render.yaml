@@ -2,7 +2,7 @@ services:
   - type: web
     name: culture-circle-backend
     env: node
-    root: backend
+    rootDir: backend
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
