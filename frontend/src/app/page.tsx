@@ -29,7 +29,7 @@ export default function Home() {
       const response = await getProducts(params);
       setProducts(response.data);
     } catch {
-      setError('Failed to load products. Ensure backend is running.');
+      setError('Failed to load products.');
     } finally {
       setLoadingProducts(false);
     }
